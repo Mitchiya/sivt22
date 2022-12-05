@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800&display=swap');
+
+:root{
+    --color: #1B1B1B;
+    --font: 'Montserrat', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    background: var(--color);
+    font-family: var(--font);
+}
+
+#gradient{
+    height: 50px;
+    display: none;
+    background: linear-gradient(pink, black);
+}
+
+main{
+    color: white;
+    width: 1600px;
+    height: auto;
+    margin: auto;
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px 0;
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    background: #131313;
+    color: lightgrey;
+}
+
+#headerTwo{
+    margin: 20px 0;
+}
+
+header{
+    color: white;
+    font-size: 40px;
+    width: 100%;
+    background: #00668F;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 70px 0 0 0;
+    padding: 35px 0;
+}
+
+header:hover{
+    animation: colorChange 5s infinite linear;
+}
+
+@keyframes colorChange {
+    0% {background-color: #00668F;}
+    50% {background-color: #007FB2;}
+    100% {background-color: #00668F;}
+}
+
+header > p{
+    padding: 35.5px;
+    margin: 0;
+}
+
+nav{
+    background: #1B1B1B;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 999;
+}
+
+nav > ul{
+    display: flex;
+    list-style: none;
+    text-align: right;
+    margin: 10px;
+    float: right;
+}
+
+nav > ul > li{
+    display: inline-block;
+    margin: 0 10px 0 10px;
+}
+
+nav button{
+    background: var(--mColor);
+    color: lightgrey;
+    padding: 15px;
+    text-decoration: none;
+    border: 0px;
+    border-radius: 3px;
+    font-family: var(--font);
+    font-size: 15px;
+}
+
+nav button:hover{
+    background: grey;
+    color: white;
+}
+
+#home{
+    margin: 10px 20px;
+}
+
+main p{
+    padding: 10px;
+}
+
+.first{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 790px 790px;
+    grid-template-rows: 400px 400px;
+    gap: 20px;
+}
+
+.first h1{
+    font-size: 50px;
+}
+
+.author:hover{
+    background-blend-mode: darken;
+}
+
+.author:hover{
+    background: black;
+}
+
+.description{
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.author:hover .description{
+    opacity: 1;
+}
+
+.first .description{
+    max-width: 790px;
+    max-height: 400px;
+    text-align: center;
+}
+
+#mxtx{
+    grid-column: 1;
+    background: url("https://static.tvtropes.org/pmwiki/pub/images/mxtx_avatar.png") no-repeat #FDF0BE center;
+}
+
+#mxtx:hover{
+    background: black;
+}
+
+#txt{
+    grid-column: 2;
+    background-image: url("https://www.k-pop.pt/wp-content/uploads/2022/05/1653254126_dummy.jpeg");
+    background-size: 790px;
+    background-repeat: no-repeat;
+    transition: 0.25s;
+}
+#bts{
+    background-image: url("https://api.time.com/wp-content/uploads/2022/06/BTS_Proof-Concept-Photo_Proof-ver._Group.jpg?quality=85&w=1900");
+    background-size: 790px;
+    background-repeat: no-repeat;
+    background-position-y: -85px;
+    transition: .25s;
+}
+#take{
+    background-image: url("https://i.ytimg.com/vi/h_81y5qAcS4/maxresdefault.jpg");
+    background-size: 790px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    transition: .25s;
+}
+
+/*----------SECOND-------*/
+
+.second{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 385px 385px 385px 385px;
+    grid-template-rows: 385px 385px;
+    gap: 20px;
+}
+
+.second .description{
+    max-width: 385px;
+    max-height: 385px;
+    text-align: center;
+}
+
+.second h1{
+    text-transform: uppercase;
+}
+
+#sapkowski{
+    grid-column: 1;
+    background-image: url("https://image.pmgstatic.com/files/images/creator/photos/163/969/163969925_d59039.jpg?w100h132crop");
+    background-position: center;
+    background-size: 385px;
+    transition: 0.25s;
+}
+#tarantino{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Quentin_Tarantino_by_Gage_Skidmore.jpg/1200px-Quentin_Tarantino_by_Gage_Skidmore.jpg");
+    background-position: center;
+    background-size: 385px;
+    transition: 0.25s;
+}
+#bennett{
+    background-image: url("https://m.media-amazon.com/images/S/amzn-author-media-prod/ok9fsl10tst6ctmdtsthaftmsl._SY300_.jpg");
+    background-position: center;
+    background-size: 385px;
+    transition: 0.25s;
+}
+#weber{
+    background-image: url("https://www.biography.com/.image/t_share/MTc5ODgwODEyMDQ3NTA4ODI0/gettyimages-971263866.jpg");
+    background-position: center;
+    background-size: 385px;
+    transition: 0.25s;
+}
+#adams{
+    background-image: url("https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F463b3bfb-54af-46ca-8ea3-3c64abde3621_423x594.jpeg");
+    background-position: center;
+    background-size: 385px;
+    transition: 0.25s;
+}
+#adele{
+    background-image: url("https://media.npr.org/assets/img/2022/01/20/Adele-30cfdb42107e3d8b536cee42e7834997f1470d1a-s1100-c50.jpg");
+    background-position: center;
+    background-size: 600px;
+    transition: 0.25s;
+}
+#nolan{
+    background-image: url("https://www.indiewire.com/wp-content/uploads/2021/01/AP_18133440196208.jpg");
+    background-position: center;
+    background-size: 600px;
+    background-repeat: no-repeat;
+    transition: 0.25s;
+}
+#clare{
+    background-image: url("https://www.kniznivesmir.cz/wp-content/uploads/Cassandra-Clare.png");
+    background-position: center;
+    background-size: 600px;
+    transition: 0.25s;
+}
